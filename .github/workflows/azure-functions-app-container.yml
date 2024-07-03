@@ -34,8 +34,8 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./azuredeploy.json
-        parameters: storageAccountType=Standard_LRS
+        template: ./Iac/azuredeploy.json
+        parameters: ./Iac/azuredeploy.parameters.json
 
     - name: 'Docker Login'
       uses: azure/docker-login@v1
