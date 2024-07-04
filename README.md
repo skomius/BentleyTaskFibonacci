@@ -3,7 +3,7 @@
 
 This is single endpoint and probbably will not be used continuously so its endpoint will be deployed to htttp triggered azure function in container. 
 
-#Running locally
+# Running locally
 
 - install docker desktop latest version
 - build docker image 
